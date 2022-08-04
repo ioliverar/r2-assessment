@@ -1,4 +1,4 @@
-# r2-assessment
+# Batch-Assessment
 Files Uploaded:
 - create_tables.sql(DDL)
 - Reporting_Outputs.sql (Query Reporting)
