@@ -1,0 +1,12 @@
+- Observaciones:
+- Batch process
+- Ejecucion a media noche date -1
+- File Stores: OK
+- File Sales: 
+	- campo store_token y transaction_id longitud variable. En el caso de store_token en File Stores es consistente(longitud 36) mas no en Sales (longitud 37 en algunos casos). Observacion por integridad.
+	- Se recomienda usar un id autogenerado que asegura el standard.
+	- Flata un campo que determine el estado de la transaccion.
+	- La moneda debe tener un campo individual, no debe venir con el monto.
+	- Se recomienda tener como llave un campo id autogenerado, adicional a tener el estado de la transaccion.
+	- Con el campo estado podriamos tener un historico de cada transaccion y tener el ultimo para temas de reporting.
+- CI/CD Models liquibase
